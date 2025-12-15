@@ -1,0 +1,14 @@
+{
+  "name": "fastapi-nextjs-boilerplate",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "gen": "turbo run gen",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.6.3"
+  },
+  "packageManager": "pnpm@10.25.0"
+}

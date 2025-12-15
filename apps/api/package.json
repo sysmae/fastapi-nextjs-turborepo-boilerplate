@@ -1,0 +1,9 @@
+{
+  "name": "@acme/api",
+  "private": true,
+  "scripts": {
+    "dev": "uv run fastapi dev app/main.py",
+    "start": "uv run fastapi run app/main.py",
+    "lint": "uv run ruff check ."
+  }
+}

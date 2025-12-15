@@ -1,0 +1,27 @@
+{
+  "name": "@acme/sdk",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client.gen.ts",
+    "./react-query": "./src/@tanstack/react-query.gen.ts"
+  },
+  "scripts": {
+    "gen": "openapi-ts",
+    "build": "echo 'SDK build - run pnpm gen to regenerate'"
+  },
+  "dependencies": {
+    "@hey-api/client-axios": "^0.9.1",
+    "@tanstack/react-query": "^5.80.6",
+    "axios": "^1.13.2"
+  },
+  "devDependencies": {
+    "@hey-api/openapi-ts": "^0.89.0",
+    "@types/node": "^20",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.7.2"
+  }
+}
