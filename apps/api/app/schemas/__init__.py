@@ -1,3 +1,3 @@
-from .user import User, UserCreate, UserUpdate, UserRole, Message
+from .todo import Todo, TodoCreate, TodoUpdate, Message
 
-__all__ = ["User", "UserCreate", "UserUpdate", "UserRole", "Message"]
+__all__ = ["Todo", "TodoCreate", "TodoUpdate", "Message"]

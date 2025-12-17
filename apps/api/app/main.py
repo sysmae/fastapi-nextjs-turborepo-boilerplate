@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import get_settings
 from app.core.db import create_db_and_tables
-from app.routers import users_router
+from app.routers import todos_router
 from app.schemas import Message
 
 settings = get_settings()
@@ -35,7 +35,7 @@ app.add_middleware(
 )
 
 # Routers
-app.include_router(users_router)
+app.include_router(todos_router)
 
 
 @app.get("/", response_model=Message, operation_id="healthCheck")

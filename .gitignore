@@ -25,7 +25,7 @@ venv/
 *.swo
 
 # Generated
-packages/sdk/src/
+# packages/sdk/src/
 
 # openapi-ts-error- 로 시작하는 파일은 삭제
 # Logs
